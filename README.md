@@ -27,4 +27,4 @@ To make it easier to modify the `.gitconfig` if needed, you create a symbolic li
 
 ### Personal directory
 
-
+A personal directory exists in this project to dump things that shouldn't be in source control
