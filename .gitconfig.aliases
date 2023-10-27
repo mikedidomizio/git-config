@@ -1,0 +1,12 @@
+[alias]
+
+# quick commit to amend the last commit and push it up
+acpf = "!f() { \
+    git add -A && git commit --amend --no-edit && git push --force-with-lease; \
+}; f"
+
+# find the commits between a certain date
+# params are in this format "12/1/2021"
+commits-between = "!f() { \
+    git log --since "$1" --until "$2" --pretty=format:"%h"; \
+}; f"

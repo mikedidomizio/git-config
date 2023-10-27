@@ -1,0 +1,7 @@
+.idea
+
+# if the user symbolically links their .gitconfig into this project, we don't need it in source control
+.gitconfig
+
+# customized configurations per user that shouldn't exist in source control
+# personal/
