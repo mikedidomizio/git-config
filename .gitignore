@@ -4,4 +4,4 @@
 .gitconfig
 
 # customized configurations per user that shouldn't exist in source control
-# personal/
+personal/
