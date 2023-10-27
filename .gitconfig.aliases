@@ -6,7 +6,13 @@ acpf = "!f() { \
 }; f"
 
 # find the commits between a certain date
-# params are in this format "12/1/2021"
+# ex. git commits-between 2021/01/01 2025/01/01
 commits-between = "!f() { \
     git log --since "$1" --until "$2" --pretty=format:"%h"; \
+}; f"
+
+# checkouts a commit on the current branch before a certain date
+# git checkout-before 2021/01/11
+checkout-before = "!f() { \
+    git checkout `git rev-list -n 1 --first-parent --before="$1" `git rev-parse --abbrev-ref HEAD``; \
 }; f"
